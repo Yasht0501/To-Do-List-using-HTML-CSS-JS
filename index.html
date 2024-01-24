@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Unicons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-field">
+        <textarea placeholder="Enter your new task"></textarea>
+        <svg class="uil uil-notes note-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
+            <path d="M3 14a1 1 0 0 1 1-1h12a3 3 0 0 0 3-3V6a1 1 0 1 1 2 0v4a5 5 0 0 1-5 5H4a1 1 0 0 1-1-1"/>
+            <path d="M3.293 14.707a1 1 0 0 1 0-1.414l4-4a1 1 0 0 1 1.414 1.414L5.414 14l3.293 3.293a1 1 0 1 1-1.414 1.414z"/>
+          </g>
+        </svg>
+      </div>
+
+      <ul class="todoLists"></ul>
+
+      <div class="pending-tasks">
+        <span>
+          You have <span class="pending-num"> no </span> pending tasks
+        </span>
+        <button class="clear-button"><strong>Clear All</strong></button>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
